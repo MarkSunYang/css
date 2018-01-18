@@ -17,29 +17,54 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif；
         }
 
-         em{color:rosybrown;}
+        em {
+            color: rosybrown;
+        }
 
         .warning {
             color: red;
-         
+
             font-weight: bold;
         }
 
-        .urgent{font-style: italic;}
+        .urgent {
+            font-style: italic;
+        }
 
+        .urgent.warning {
 
-        p.warning{color: blue;}
+<<<<<<< HEAD
+=======
 
+            border: solid;
+            border-color: red;
+            background: silver;
+>>>>>>> 93ac9b98d450961e9742f59fd1c55a042c8bf441
 
+        }
+
+        p.warning {
+            color: blue;
+        }
+
+        #mybox {
+            margin: 10px;
+            padding: 5px;
+            width: 70px;
+        }
     </style>
 
 </head>
 
 <body>
-    <h2>Hello<em>,mark</em></h2>
+    <h2>Hello
+        <em>,mark</em>
+    </h2>
 
     <div class="warning">警告1</div>
-    <span> <p class="warning">警告2</p></span>
+    <span>
+        <p class="warning">警告2</p>
+    </span>
 
     <p class="urgent warning">when handling plutonium</p>
     <p>with plutonium </p>
@@ -47,7 +72,9 @@
 
     <span class="urgent warning">when handling plutonium</span>
 
-    <div></div>
+    <div id="mybox">
+        mybox
+    </div>
 
 
 </body>
