@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="icon" href="./images/title.png" type="image/x-icon">
+    <title></title>
+    <script>
+
+    </script>
+
+    <style>
+/*相对定位
+绝对定位的框可以从它宝行的块向上下左右移动
+绝对定位脱离普通流，所以它可以覆盖页面上的其他元素，可以通过Z-index属性来控制
+
+*/
+
+
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        #div2 {
+            width: 50%;
+            height: 50%;
+            top: 100px;
+            left: 100px;
+            background-color: black;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+</body>
+
+</html>

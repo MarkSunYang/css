@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="icon" href="../images/title.png" type="image/x-icon">
+    <title></title>
+    <script>
+
+    </script>
+
+    <style>
+/*
+relative 相对定位
+1.普通流定位
+定位元素的位置相对于它在普通流中的位置进行移动。
+使用相对当年更为的元素不管它是否进行移动，元素仍要占据它原来的位置。
+移动预算会导致它覆盖其他的框
+*/
+        .box1{
+            background-color:aqua;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box2{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 20px;
+        }
+
+        .box3{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            right: 20px;
+        }
+     
+    </style>
+
+</head>
+
+<body>
+        <div class="box1">box1</div>
+      <span>11</span>  <div class="box2">box2</div>
+        <div class="box3">box3</div>
+
+</body>
+
+</html>

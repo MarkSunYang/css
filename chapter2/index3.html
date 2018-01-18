@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link rel="icon" href="./images/title.png" type="image/x-icon">
+    <title></title>
+    <script>
+    </script>
+
+    <style>
+        #main-box {
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+        }
+
+        #main-box .pos_static {
+            width: 40px;
+            height: 40px;
+            position: static;
+            left: 20px;
+            background-color: antiquewhite;
+        }
+
+        #main-box .pso_relative{
+            width: 40px;
+            height: 40px;
+            position:relative;
+            left:20px;
+            background-color: chocolate;
+        }
+
+        #main-box .pos_absolute {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 100px;
+            right: 100px;
+            background-color: rgb(30, 78, 210);
+
+        }
+
+        #main-box .pos_fixed{
+            width: 40px;
+            height: 40px;
+            position:fixed;
+            left:20px;
+            top: 20px;
+            background-color: rgb(210, 30, 135);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        sometext
+        <p>some more text</p>
+    </div>
+
+    <div id="main-box">
+        1
+        <div class="pos_static">
+            <div>232</div>
+            <span>3232</span>
+        </div>
+        <div class="pso_relative">relative</div>
+        <div class="pos_absolute">absolute</div>
+        <div class="pos_fixed">fixed</div>
+    </div>
+  
+</body>
+
+</html>
