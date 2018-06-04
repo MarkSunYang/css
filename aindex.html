@@ -1,28 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="icon" href="./images/title.png" type="image/x-icon">
-    <title></title>
-    <script>
-
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
     <style>
-        * {
-            color: red;
+        .parent {
+            position: relative;
+            left: 20px;
+            top: 20px;
+            width: 500px;
+            height: 500px;
+            background: green;
         }
 
-        h1,
-        h2 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif；
+        .box {
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+
+        .div3 {
+            width: 100px;
+            height: 200px;
+            float: left;
+           background:   red;
+        }
+
+        .div4 {
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+
+
+        .all{
+            border: 1px solid red;
+              /* overflow: hidden; */
+        }
+        /* .all:after{
+            content: ' ';
+            clear: both;
+            display: block;
+        } */
+
+
+        .div5, .div6, .div7{
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+            border: 1px solid blue;
+        }
+
+        .myclear{
+            clear: both;
         }
     </style>
+
 
 </head>
 
 <body>
-<h2>Hello</h2>
+    <p>11</p>
+    <div class="div3">left</div>
+    <div class="div4"><p>1111</p> </div>
 
+    <div class="all">
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+        <div class="div7">div7</div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两行布局</title>
+
+    <style>
+
+        /* 
+        两行布局，左边定宽，右边自适应
+        
+        1.先把左边做个定宽：然后右边的宽度=左边宽度+10； 注意min-width设置一下,不然缩小到很小的时候影响阅读
+        
+        */
+        .left {
+            width: 200px;
+            height:600px;
+            float: left;
+            line-height: 40px;
+            background: red;
+        }
+            
+        .right {
+            margin-left:210px; 
+            height: 600px;
+            min-width: 400px;
+            background: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="left">定宽定宽定宽定宽定宽定宽定宽定宽定宽</div>
+
+    <div class="right">自适应自适应自适应自适自适应自适应自适应自适应自适应自适应自适应自适应应自适应自适应自适应自适应</div>
+</body>
+
+</html>

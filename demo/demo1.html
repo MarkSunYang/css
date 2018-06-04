@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        #change {
+            color: blue !important;
+        }
+
+        p {
+            color: red !important;
+        }
+
+        .abstract {
+            color: grey;
+        }
+
+        .abstract a {
+            color: inherit;
+            /*继承父级样式*/
+            text-decoration: none;
+            border: thin black solid;
+        }
+
+        .different {
+            color: red;
+        }
+
+        .different a {
+            text-decoration: none;
+            border: thin black solid;
+        }
+
+        .div1 {
+            color: inherit;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="change" style="color:black;">我本来是红色的，后来我用id变换颜色，现在我又用了内联样式</h1>
+    <p>hello world!</p>
+    <a href="#">hello</a>
+    <div class="div1">Hello Blue</div>
+    <p class="abstract">
+        <!--  将a元素颜色设为"inherit",则a元素继承父元素颜色-->
+        我是灰色的，我的子元素也应该是灰色的
+        <a href="#">我不知道我是什么颜色的，反正跟我的父元素一样就行了，而且我有框</a>
+        <span>我默认就跟我的父元素是一样的</span>
+    </p>
+    <p class="different">
+        <!--未将a元素颜色设为"inherit"，则a元素不会继承父元素颜色-->
+        我是红色的，我的子元素也应该是红色的
+        <a href="#">我不知道我是什么颜色的，但是我跟我的父元素不一样，而且我有框</a>
+        <span>我跟我的父元素不一样</span>
+    </p>
+</body>
+
+</html>

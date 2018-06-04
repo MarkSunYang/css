@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏布局3</title>
+
+    <style>
+        /* 
+            由于前面两种种布局确实很蛋疼所以我们换一种方法
+
+           
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            background: yellow;
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+.center{
+    height: 300px;
+    margin: 0 220px;
+    min-width: 400px;
+    background: red;
+}
+.right{
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: green;
+}
+    </style>
+
+</head>
+
+<body>
+       <div class="left">left</div>
+        <div class="center"> center</div>
+        <div class="right">right</div>
+
+</body>
+
+</html>
