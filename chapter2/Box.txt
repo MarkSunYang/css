@@ -1,0 +1,105 @@
+
+// https://leohxj.gitbooks.io/front-end-database/html-and-css-basic/css-position.html
+// http://zh.learnlayout.com/display.html
+
+浮动、定位、盒模型
+
+盒模型
+如何实现外边距叠加原因
+相对和绝对定位之间的差异
+浮动和清理是如何工作的
+
+盒模型：
+外边框、边框、内边距、内容区域（height、width）
+内边距、边框、外边距是可选的，默认值为0
+*{margin:0;padding:0;}
+
+外边距叠加原因:当一个元素出现在另一个元素上面时，
+第一个元素的底外边距与第二个元素的顶外边距发生叠加
+
+content-box（默认）
+布局所占宽度Width：
+Width = width + padding-left + padding-right + border-left + border-right
+布局所占高度Height:
+Height = height + padding-top + padding-bottom + border-top + border-bottom
+
+
+普通流： 元素按照其在 HTML 中的位置顺序决定排布的过程。并且这种过程遵循标准的描述
+调节普通流元素位置
+一般使用margin是用来隔开元素与元素的间距
+padding是用来隔开元素与内容的间隔
+margin用于布局分开元素使元素与元素互不相干
+padding用于元素与内容之间的间隔，让内容（文字）与（包裹）元素之间有一段“距离”。
+只要不是float和绝对定位方式布局的，都在普通流里面。
+
+普通流的三种定位机制：
+block formatting 块格式化
+inline formatting 行内格式化 
+relative position 相对定位
+run-in-box定位
+任何被渲染的元素都属于一个 box ，并且不是 block ，就是 inline 。
+
+
+定位概述：
+熟悉了盒模型，我们可以看看格式化模型和定位模型。
+1.可格式化模型
+p、h1或div等元素常常被称为块级元素。这意味着这些元素显示为一块内容
+即 块框，而span strong被称为行内元素
+可以是用dispaly 属性改变生成的框的类型，这意味着 display:blick
+可以让行内元素，还可以通过将display设置为none，让生成的元素没有边框
+
+Css3中基本的定位机制：普通流、浮动和绝对定位。
+除非专门指定，否则所有边框在普通流中定位，
+块级狂从上到下一个接一个垂直排列
+行内框在一行中水平排列，可以使用水平边距，边框外边距调整他们
+
+block:宽高可以自行设置，默认宽度由父容器决定，默认高度有内容决定。自己独占一行。
+inline:宽度和高度都有内容决定，与其他元素共占一行。
+
+position: 
+
+static: 默认值，没有定位
+元素框正常生成。
+块级元素生成一个矩形框，作为文档流的一部分，
+行内元素则会创建一个或多个行框，置于其父元素中。
+元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+
+relative 相对定位
+元素框偏移某个距离。
+元素仍保持其未定位前的形状，
+它原本所占的空间仍保留。
+因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+
+
+absolute 绝对定位
+相对于static定位意外的第一个父元素进行定位；
+位置通过 left top right bottom 属性进行定位
+元素框从文档流完全删除，并相对于其包含块定位;
+
+fixed 固定定位
+相对于浏览器窗口进行定位；
+位置通过 left top right bottom 属性进行定位
+元素框的表现类似于将 position 设置为 absolute，不过其包含块是视窗本身。
+
+
+relative 相对定位：
+生成相对定位的元素，相对于其正常位置进行定位。
+如果对一个元素进行相对定位，它将出现在它所在的位置上~
+可以通过设置垂直或水平位置，让这个元素相对于它的起点移动，
+如果将top设置为20，那么框将出现在原位置顶部下20像素，left设置为20
+
+
+css定位属性：
+position：把元素放到一个静态的、相对的、绝对的、或固定的位置中
+top 定义了一个定位元素的上外编剧与其包含块上边界之间的偏移
+right 定义了一个位置元素右外边距与其包含右边界之间的偏移
+left bottom
+overflow 
+z-index
+
+
+浮动：
+
+
+行框和清理
+
